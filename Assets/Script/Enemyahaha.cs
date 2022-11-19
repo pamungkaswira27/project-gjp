@@ -13,7 +13,7 @@ public class Enemyahaha : MonoBehaviour
     public float groundChekerRadius;
     public LayerMask whatIsGround;
 
-    //public Transform hudBar;
+    public Transform hudBar;
     
     void Start()
     {
@@ -27,13 +27,13 @@ public class Enemyahaha : MonoBehaviour
         { 
             if (isFacingRight)
             {
-               // hudBar.localEulerAngles = Vector2.zero;
+                hudBar.localEulerAngles = Vector2.zero;
                 transform.eulerAngles = Vector2.up * 180;
                 isFacingRight = false;
             }
             else
             {
-               // hudBar.localEulerAngles = Vector2.up * 180; ;
+                hudBar.localEulerAngles = Vector2.up * 180; ;
                 transform.eulerAngles = Vector2.zero;
                 isFacingRight = true; 
             }

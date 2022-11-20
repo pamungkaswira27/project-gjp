@@ -10,7 +10,10 @@ public class PlayerMortality : MonoBehaviour
     public int health;
     public GameObject[] healthUI;
 
-
+    public void increaseHealh(int health)
+    {
+        this.health += health;
+    }
     
     public void TakeDamage()
     {

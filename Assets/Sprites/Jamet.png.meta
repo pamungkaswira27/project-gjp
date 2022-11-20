@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92fbedfe6559cf447b8f8f1e2c6ae398
+guid: 87fc4c01e6d7cc943b8d505d90153a56
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 360
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,7 +127,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Jamet_0
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 692
+        width: 253
+        height: 249
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.02338627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a3640feb21d5243a26e802110ee771
+      internalID: 953878788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jamet_1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 402
+        width: 301
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2ca4b1038af4945b1d46c2fff0a938
+      internalID: -1267620363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jamet_2
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 548
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be5ae297ed29324da983f3b7b9557c1
+      internalID: 1204025777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jamet_3
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 412
+        width: 235
+        height: 89
+      alignment: 9
+      pivot: {x: 0.07080779, y: 0.8914901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67dbf92315b3734589975df074208b0
+      internalID: -2031333247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jamet_4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 141
+        width: 95
+        height: 196
+      alignment: 9
+      pivot: {x: 0.55308455, y: 0.97248966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871148146dad3aa44a30b4935dcf81da
+      internalID: -1888810881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jamet_5
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 150
+        width: 109
+        height: 179
+      alignment: 9
+      pivot: {x: 0.14669548, y: 0.9558941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefc21d9febe70b4da36cd829d8cf3e3
+      internalID: -29552275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +264,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jamet_2: 1204025777
+      Jamet_3: -2031333247
+      Jamet_0: 953878788
+      Jamet_4: -1888810881
+      Jamet_1: -1267620363
+      Jamet_5: -29552275
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

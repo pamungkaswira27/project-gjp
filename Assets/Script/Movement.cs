@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
        {
            float move = Input.GetAxisRaw("Horizontal");
            myRb.velocity = new Vector2(move * moveSpeed, myRb.velocity.y);
-           animator.SetFloat("Move", move);
+           animator.SetFloat("Move", Mathf.Sign(move));
    
            if (move > 0 && !isFacingRight)
            {
@@ -73,12 +73,12 @@ public class Movement : MonoBehaviour
            if (!IsGrounded() && !isJumping)
            {
                isJumping = true;
-               animator.SetBool("isJumping", true);
+               animator.SetBool("isJump", true);
            }
            else if (IsGrounded() && isJumping)
            {
                isJumping = false;
-               animator.SetBool("isJumping", false);
+               animator.SetBool("isJump", false);
            }
        }
    

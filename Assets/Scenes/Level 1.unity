@@ -518,6 +518,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &70083457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70083458}
+  m_Layer: 8
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &70083458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70083457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.888, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1858331813}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141547378
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8017020371531917950, guid: 604ddfefc8213d148a8725c26bde46ab, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604ddfefc8213d148a8725c26bde46ab, type: 3}
@@ -763,7 +794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469104396}
   - component: {fileID: 469104397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jamet_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508104617}
   - component: {fileID: 508104618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jamet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b541549c3c27764aa93812e4b09512a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 0}
+  playerPos: {fileID: 1858331813}
   offset: {x: 4, y: 0, z: -10}
   cameraSpeed: 5
 --- !u!1001 &976760695
@@ -2053,11 +2084,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5079455868854826682, guid: 92f64d8846ceb2849939f7a6b051cd51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49
+      value: 49.008
       objectReference: {fileID: 0}
     - target: {fileID: 5079455868854826682, guid: 92f64d8846ceb2849939f7a6b051cd51, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 3.533
       objectReference: {fileID: 0}
     - target: {fileID: 5079455868854826682, guid: 92f64d8846ceb2849939f7a6b051cd51, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2770,7 +2801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1459732911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2911,7 +2942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487693911}
   - component: {fileID: 1487693912}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jamet_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3381,11 +3412,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5079455868854826682, guid: 92f64d8846ceb2849939f7a6b051cd51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 2.919
       objectReference: {fileID: 0}
     - target: {fileID: 5079455868854826682, guid: 92f64d8846ceb2849939f7a6b051cd51, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -8.446
       objectReference: {fileID: 0}
     - target: {fileID: 5079455868854826682, guid: 92f64d8846ceb2849939f7a6b051cd51, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8384,9 +8415,10 @@ GameObject:
   - component: {fileID: 1858331816}
   - component: {fileID: 1858331817}
   - component: {fileID: 1858331818}
-  m_Layer: 0
+  - component: {fileID: 1858331819}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8407,6 +8439,7 @@ Transform:
   - {fileID: 1487693911}
   - {fileID: 2114084551}
   - {fileID: 1459732911}
+  - {fileID: 70083458}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8480,7 +8513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 5
+  jumpForce: 10
   isFacingRight: 1
   isJumping: 0
   radius: 0.25
@@ -8506,6 +8539,20 @@ MonoBehaviour:
   - {fileID: 1232738353}
   - {fileID: 141547380}
   - {fileID: 44502204}
+--- !u!114 &1858331819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858331812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df61abc4c302a054bbb9ae046c2bf730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4164225142205730783, guid: cfb8620a2de557b40a54c960d0f36277, type: 3}
+  shootPoint: {fileID: 70083458}
 --- !u!1 &1879262343
 GameObject:
   m_ObjectHideFlags: 0
@@ -8610,7 +8657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926334154}
   - component: {fileID: 1926334155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jamet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8895,7 +8942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114084551}
   - component: {fileID: 2114084552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jamet_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

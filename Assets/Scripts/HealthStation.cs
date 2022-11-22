@@ -7,6 +7,13 @@ public class HealthStation : MonoBehaviour
     [SerializeField] float detectorRadius;
     [SerializeField] LayerMask playerLayer;
 
+    PlayerMortality playerMortality;
+
+    void Awake()
+    {
+        playerMortality = FindObjectOfType<PlayerMortality>();
+    }
+
     void Update()
     {
         if (Physics2D.OverlapCircle(detector.position, detectorRadius, playerLayer))
@@ -14,6 +21,7 @@ public class HealthStation : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 // Regenarate
+                playerMortality.IncreaseHealth(healthRegenerate);
                 Debug.Log("Health Increase");
             }
         }

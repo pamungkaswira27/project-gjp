@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 
 public class PlayerMortality : MonoBehaviour
 {
     public int health;
-    public GameObject[] healthUI;
+    public Image[] healthUI;
+    int maxHealth;
 
-    public void increaseHealh(int health)
+    void Start()
+    {
+        maxHealth = healthUI.Length;
+    }
+
+    public void IncreaseHealth(int health)
     {
         this.health += health;
+
+        if (this.health >= maxHealth)
+            this.health = maxHealth;
     }
     
     public void TakeDamage()
@@ -21,9 +31,20 @@ public class PlayerMortality : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneController.Instance.ReloadScene();
         }
-        healthUI[health].SetActive(false);
+        healthUI[health].gameObject.SetActive(false);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            health = 0;
+            SceneController.Instance.ReloadScene();
+        }
+        healthUI[health].gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -61,4 +61,14 @@ public class MovingPlatform : MonoBehaviour
         else
             isTurnOn = false;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        other.transform.parent = this.transform;
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        other.transform.parent = null;
+    }
 }

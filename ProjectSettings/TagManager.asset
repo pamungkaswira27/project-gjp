@@ -5,7 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enviroment
+<<<<<<< HEAD
+ - Player
+  - Ground
+  - 
+=======
   - Enemy
+>>>>>>> sakti
   layers:
   - Default
   - TransparentFX
@@ -13,9 +19,15 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
+  - Player
+  - Ground
+  - 
+=======
   - Ground
   - Enemy
   - Player
+>>>>>>> sakti
   - 
   - 
   - 
@@ -42,4 +54,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 219730161
+    locked: 0
+  - name: Platform
+    uniqueID: 39479405
+    locked: 0
+  - name: Bullet
+    uniqueID: 2007467493
     locked: 0

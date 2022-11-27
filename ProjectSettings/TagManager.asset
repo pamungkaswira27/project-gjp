@@ -5,29 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enviroment
-<<<<<<< HEAD
- - Player
-  - Ground
-  - 
-=======
   - Enemy
->>>>>>> sakti
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-<<<<<<< HEAD
-  - Player
-  - Ground
-  - 
-=======
-  - Ground
   - Enemy
-  - Player
->>>>>>> sakti
+  - 
+  - 
   - 
   - 
   - 
@@ -55,12 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 219730161
+  - name: Envi
+    uniqueID: 714086109
     locked: 0
-  - name: Platform
-    uniqueID: 39479405
+  - name: Player
+    uniqueID: 2266008083
     locked: 0
-  - name: Bullet
-    uniqueID: 2007467493
+  - name: Enemy
+    uniqueID: 2984698659
+    locked: 0
+  - name: Eye
+    uniqueID: 220244047
     locked: 0
